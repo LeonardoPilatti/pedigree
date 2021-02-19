@@ -1,0 +1,45 @@
+.produtos {
+    padding: 40px 0;
+    h1 {
+        text-align: center;
+        @include tipo-2(45);
+        font-weight: bold;
+        color: $cinza;
+        padding-bottom: 40px;
+    }
+    h2 {
+        @include tipo-2(30);
+        padding: 40px 0 60px 0;
+        color: $amarelo;
+        text-align: center;
+    }
+    img {
+        width: 160px;
+        margin: 0 auto;
+    }
+    a {
+        color: $amarelo;
+        border: 2px solid;
+        text-align: center;
+        display: block;
+        width: 200px;
+        padding: 15px;
+        margin: 20px auto 0 auto;
+        @include tipo-2(18);
+        text-transform: uppercase;
+        text-decoration: none;
+        &::after {
+            content: "⯈";
+            margin-left: 50px;
+        }
+        &:hover {
+            color: $cinza;
+        }
+    }
+    .primeiroA {
+        margin-top: 44px;
+    }
+    .segundoA {
+        margin-top: 33px;
+    }
+}

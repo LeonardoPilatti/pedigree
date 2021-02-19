@@ -1,0 +1,52 @@
+.header {
+    height: 630px;
+    width: 100%;
+    padding: 40px 0;
+    background: url("../../img/cachorros_no_zoom.png") no-repeat center;
+   background-size: cover;
+}
+.header_menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    img {
+       width: 60px;  
+    }
+
+    a {
+        display: block; 
+        padding: 5px 10px;
+        text-decoration: none;
+        color: $branco;
+        border-right: 1px solid #251619;
+        font-weight: bold;
+        @include tipo-2(14);
+        &:hover {
+            color: $cinza;
+            text-decoration: underline;
+        }
+        span {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    .logo {
+        display: none;
+    }
+}   
+
+.header_sociais {
+    align-self: center;
+    ul {
+        display: flex;
+        
+        a {
+            display: block;
+            padding: 5px;
+            
+        }
+    }
+    img {
+        width: 20px;
+    }
+}

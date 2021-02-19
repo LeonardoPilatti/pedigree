@@ -1,0 +1,55 @@
+.navegacao {
+    background: $amarelo;
+    padding: 20px 0 0 0;
+    text-align: center;
+    h2 a {
+        display: block;
+        @include tipo-2(15);
+        font-weight: bold;
+        color: $branco;
+        padding-bottom: 20px;
+        text-decoration: none;
+        &:hover {
+            color: $cinza;
+        }
+    }
+    li a {
+        display: block;
+       text-decoration: none; 
+       color: $branco;
+       padding-bottom: 10px;
+       &:hover {
+           color: $cinza;
+       }
+    }
+    .navBusca {
+        display: block;
+        @include tipo-2(15);
+        font-weight: bold;
+        color: $branco;
+        padding-bottom: 20px;
+        text-decoration: none;
+        &:hover {
+            color: $cinza;
+        }
+    }
+    .sociais {
+        align-self: flex-start;
+        ul {
+            display: flex;
+            
+            a {
+                display: block;
+                padding: 5px;
+                
+            }
+        }
+        img {
+            width: 20px;
+        }
+    }
+    .nav_logo {
+        float: right;
+        margin-right: 100px;
+    }
+}

@@ -1,0 +1,62 @@
+// cores:
+$amarelo: #fec118;
+$preto: #000;
+$cinza: #333;
+$branco: #FFF;
+
+// fontes:
+$font-1: 'PT Mono', monospace;
+$font-2: 'Courier Prime', monospace;
+
+// Para calcular o tamanho da fonte em pixels para EM:
+@function em($pixel, $contexto: 16){
+    @return $pixel / $contexto + em;
+}
+
+
+// mixins:
+@mixin tipo-1($size){
+    font-family: $font-1;
+    @if $size == 18 {
+        font-size: em(18);
+        line-height: em(30, 18);   // esse em(pixel, contexto) estou mudando o valor do pixel e depois do contexto
+    }
+}
+
+@mixin tipo-2($size){
+    font-family: $font-2;
+    @if $size == 15 {
+        font-size: em(15);
+        line-height: em(26, 15);
+    }
+    @else if $size == 14 {
+        font-size: em(14);
+        line-height: em(20, 14);
+    }
+    @else if $size == 30 {
+        font-size: em(30);
+        line-height: em(33, 30);
+    }
+    @else if $size == 18 {
+        font-size: em(18);
+        line-height: em(14, 18);
+    }
+    @else if $size == 45 {
+        font-size: em(45);
+        line-height: em(50, 45);
+    }
+
+}
+
+
+@mixin box-shadow($shadow...) {  // esses tres pontos eh pq posso incluir mais cores, eh para fazer a sombra no botao
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+/// para imagens:
+img {
+    display: block;
+    max-width: 100%;
+}

@@ -1,0 +1,45 @@
+.propaganda {
+    padding: 40px 0 15px 0;
+    background: $amarelo;
+    color: $branco;
+    h2 {
+        @include tipo-2(30);
+        max-width: 450px;
+        padding-bottom: 15px;
+        font-weight: bold;
+    }
+    p {
+        @include tipo-2(14);
+        max-width: 350px;
+    }
+    img {
+        width: 140px;
+        margin: 0 auto; 
+    }
+    a {
+        align-self: center;
+        display: block;
+        border: 3px solid;
+        padding: 10px 30px;
+        color: $branco;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include tipo-2(18);
+        text-decoration: none;
+        padding: 20px 50px;
+        margin: 0 auto;
+        &::after {
+            content: "⯈";
+            margin-left: 50px;
+        }
+        &:hover {
+            color: $cinza;
+        }
+    }
+}
+
+.propaganda2 {
+    img {
+        width: 60px;
+    }
+}

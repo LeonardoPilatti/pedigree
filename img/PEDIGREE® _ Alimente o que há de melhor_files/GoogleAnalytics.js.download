@@ -1,0 +1,7 @@
+﻿
+
+function gaSend(Category, Action, Label) {
+
+    ga('send', 'event', Category, Action, Label);
+
+}
