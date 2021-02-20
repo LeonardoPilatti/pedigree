@@ -4,13 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development --watch --entry ./js/script.js -o ./",
     "build": "webpack --mode production --entry ./js/script.js -o ./"
-=======
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 84919ab8a77806bbfbe80d359ff667a22aa4efc0
   },
   "repository": {
     "type": "git",
@@ -23,16 +18,8 @@
   },
   "homepage": "https://github.com/LeonardoPilatti/pedigree#readme",
   "devDependencies": {
-    "eslint": "^7.20.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-<<<<<<< HEAD
-    "prettier": "2.2.1"
-  },
-  "dependencies": {
-    "eslint-config-prettier": "^7.2.0",
-=======
->>>>>>> 84919ab8a77806bbfbe80d359ff667a22aa4efc0
     "webpack": "^5.23.0",
     "webpack-cli": "^4.5.0"
   }
