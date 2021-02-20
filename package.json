@@ -1,0 +1,26 @@
+{
+  "name": "pedigree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardoPilatti/pedigree.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonardoPilatti/pedigree/issues"
+  },
+  "homepage": "https://github.com/LeonardoPilatti/pedigree#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0"
+  }
+}

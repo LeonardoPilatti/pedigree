@@ -20,6 +20,7 @@
        padding-bottom: 10px;
        &:hover {
            color: $cinza;
+           cursor: pointer;
        }
     }
     .navBusca {
@@ -31,6 +32,7 @@
         text-decoration: none;
         &:hover {
             color: $cinza;
+            cursor: pointer;
         }
     }
     .sociais {
