@@ -1,9 +1,14 @@
 .header {
-    height: 630px;
+   position: fixed;
+   top: 0;
     width: 100%;
-    padding: 40px 0;
-    background: url("../../img/cachorros_no_zoom.png") no-repeat center;
-   background-size: cover;
+    padding: 20px 0;
+    background: transparent;
+    z-index: 10;
+    transition: background-color 0.5s ease-in-out;
+}
+.mudaCor{
+    background-color:$amarelo !important;
 }
 .header_menu ul {
     display: flex;
