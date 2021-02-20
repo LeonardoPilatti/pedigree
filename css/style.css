@@ -518,9 +518,10 @@ img {
 /* line 21, ../Projetos/pedigree/css/scss/_navegacao.scss */
 .navegacao li a:hover {
   color: #333;
+  cursor: pointer;
 }
 
-/* line 25, ../Projetos/pedigree/css/scss/_navegacao.scss */
+/* line 26, ../Projetos/pedigree/css/scss/_navegacao.scss */
 .navegacao .navBusca {
   display: block;
   font-family: "Courier Prime", monospace;
@@ -532,33 +533,34 @@ img {
   text-decoration: none;
 }
 
-/* line 32, ../Projetos/pedigree/css/scss/_navegacao.scss */
+/* line 33, ../Projetos/pedigree/css/scss/_navegacao.scss */
 .navegacao .navBusca:hover {
   color: #333;
+  cursor: pointer;
 }
 
-/* line 36, ../Projetos/pedigree/css/scss/_navegacao.scss */
+/* line 38, ../Projetos/pedigree/css/scss/_navegacao.scss */
 .navegacao .sociais {
   align-self: flex-start;
 }
 
-/* line 38, ../Projetos/pedigree/css/scss/_navegacao.scss */
+/* line 40, ../Projetos/pedigree/css/scss/_navegacao.scss */
 .navegacao .sociais ul {
   display: flex;
 }
 
-/* line 41, ../Projetos/pedigree/css/scss/_navegacao.scss */
+/* line 43, ../Projetos/pedigree/css/scss/_navegacao.scss */
 .navegacao .sociais ul a {
   display: block;
   padding: 5px;
 }
 
-/* line 47, ../Projetos/pedigree/css/scss/_navegacao.scss */
+/* line 49, ../Projetos/pedigree/css/scss/_navegacao.scss */
 .navegacao .sociais img {
   width: 20px;
 }
 
-/* line 51, ../Projetos/pedigree/css/scss/_navegacao.scss */
+/* line 53, ../Projetos/pedigree/css/scss/_navegacao.scss */
 .navegacao .nav_logo {
   float: right;
   margin-right: 100px;
