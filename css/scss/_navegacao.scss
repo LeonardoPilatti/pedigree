@@ -55,3 +55,14 @@
         margin-right: 100px;
     }
 }
+
+@media (max-width: 700px) { 
+    .navegacao h2 a {
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+    .sociais {
+        align-self: center !important;
+        padding-bottom: 10px;
+    }
+}
