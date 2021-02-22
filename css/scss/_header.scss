@@ -31,33 +31,38 @@
             text-decoration: underline;
         }
         span {
-            text-transform: uppercase;
-            font-weight: bold;
+            display: inline-block;
+            img {
+                width: 15px;
+            }
         }
     }
     .logo {
         display: none;
     }
-}   
-
-.header_sociais {
-    align-self: center;
-    ul {
-        display: flex;
-        
-        a {
-            display: block;
-            padding: 5px;
-            
-        }
-    }
     img {
         width: 20px;
     }
-}
+}   
+
 
 @media (max-width: 700px) { 
+    .header {
+        padding: 0px 0 !important;
+    }
     .header_menu ul li a {
         border-bottom: 2px solid $branco;
     }
 }
+
+.back-to-top {
+     position: fixed;
+     bottom: 50px;
+     right: 50px;
+     text-align: center;
+     @include tipo-2(14);
+     cursor: pointer;
+     &:hover {
+         text-decoration: underline;
+     } 
+   }

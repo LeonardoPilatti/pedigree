@@ -27,7 +27,7 @@
   position: absolute;
   top: 28px;
   background: $amarelo;
-  border: 4px solid $branco;
+  border: 4px solid $branco ;
   z-index: 200;
   width: 200px;
   padding: 10px;
@@ -50,7 +50,7 @@
   color: $cinza;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .dropdown-menu {
     background: red !important;
   }

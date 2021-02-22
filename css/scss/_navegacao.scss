@@ -11,6 +11,7 @@
         text-decoration: none;
         &:hover {
             color: $cinza;
+            text-decoration: underline;
         }
     }
     li a {
@@ -21,6 +22,7 @@
        &:hover {
            color: $cinza;
            cursor: pointer;
+           text-decoration: underline;
        }
     }
     .navBusca {
@@ -33,6 +35,13 @@
         &:hover {
             color: $cinza;
             cursor: pointer;
+            text-decoration: underline;
+        }
+        span {
+            display: inline-block;
+            img {
+                width: 15px;
+            }
         }
     }
     .sociais {
