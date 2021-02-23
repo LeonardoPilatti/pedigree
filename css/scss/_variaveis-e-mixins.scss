@@ -45,6 +45,10 @@ $font-2: 'Courier Prime', monospace;
         font-size: em(45);
         line-height: em(50, 45);
     }
+    @else if $size == 25 {
+        font-size: em(25);
+        line-height: em(120, 25);
+    }
 
 }
 

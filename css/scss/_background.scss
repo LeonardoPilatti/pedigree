@@ -1,6 +1,110 @@
-.background {
-  height: 630px;
-  background: url("../../img/cachorros_no_zoom.png") no-repeat center;
+.sectionSlide {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+} 
+
+.slider {
+  flex: 1;
+  overflow: hidden;  /// para não ter barra de rolagem nas imagens;
+}
+
+.slider--width {
+  height: 100%;
+  display: flex;
+  transition: all ease 0.3s;
+}
+
+.slider--item {
+  width: 100vw;
+  height: inherit;  /// esse inherit é que vai herder o tamanho da div pai, no caso,  o slider-width;
+  background-position: center;
   background-size: cover;
 }
+
+.slider-controls {
+  position: absolute;
+  z-index: 99;
+  width: 100%;  /// para esconder a barra de rolagem para a largura
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-control {
+  width: 65px;
+  height: 120px;
+  background-color: rgba(44,62,80, .4);
+  color: $branco;
+  text-align: center;
+  @include tipo-2(25);
+  cursor: pointer;
+  font-weight: bold;
+  overflow: hidden;
+  &:hover {
+    background-color: rgba(44,62,80, .9);
+    color: $amarelo;
+  }
+}
+
+
+
+
+
+
+
+
+
+// .contencao {
+//   height: 630px;
+//   width: 100%;
+//   overflow: hidden;
+// }
+
+// #imageBg {
+//   height: 630px;
+//   background-size: cover;
+//   transition: 1s;
+// }
+
+// .anterior, .proximo {
+//   position: relative;
+//   margin-top: -315px;
+//   width: 65px;
+//   height: 120px;
+//   background-color: rgba(44,62,80, .4);
+//   color: $branco;
+//   text-align: center;
+//   @include tipo-2(25);
+//   cursor: pointer;
+//   font-weight: bold;
+// }
+
+// .anterior {
+//   float: left;
+// }
+
+// .proximo {
+//   float: right;
+// }
+
+// .anterior:hover, .proximo:hover {
+//   background-color: rgba(44,62,80, .9);
+// }
+
+// #botoes {
+//   width: 150px;
+//   display: flex;
+//   li {
+//     background: #131B22;
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 50%;
+//   }
+// }
+
+// .selected {
+//   background: #c0392B;
+// }
+
 

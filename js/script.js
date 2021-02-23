@@ -33,3 +33,46 @@ var btn = document.querySelector(".back-to-top");
 btn.addEventListener("click", function() {
     window.scrollTo(0, 0);
 });
+
+//// slide background:
+let totalSlides = document.querySelectorAll('.slider--item').length;  /// estou selecionando todos os slider--item e pegando até o ultimo com o .length;
+let currentSlide = 0;
+
+const prev = document.querySelector('[data-prev]');
+const next = document.querySelector('[data-next]');
+
+document.querySelector('.slider--width').style.width = `calc(100vw * ${totalSlides})`;
+document.querySelector('.slider-controls').style.height = `${document.querySelector('.slider').clientHeight}px`;  /// aqui é para os controles do slide ficarem na metade do tamanho do .slider
+
+function updateMargin() {
+  let sliderItemWidth= document.querySelector('.slider--item').clientWidth;
+  let newMargin = (currentSlide * sliderItemWidth);
+  document.querySelector('.slider--width').style.marginLeft = `-${newMargin}px`;
+}
+
+
+function goPrev() {
+  currentSlide--;
+  if(currentSlide < 0) {
+    currentSlide = totalSlides - 1;
+  }
+  updateMargin();
+}
+
+function goNext() {
+  currentSlide++;
+  if(currentSlide > (totalSlides - 1)) {
+    currentSlide = 0;
+  }
+  updateMargin();
+}
+
+prev.addEventListener('click', goPrev);
+next.addEventListener('click', goNext);
+
+
+
+
+
+setInterval(goNext, 5000)
+
