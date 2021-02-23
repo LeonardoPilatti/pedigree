@@ -66,3 +66,18 @@
          text-decoration: underline;
      } 
    }
+
+
+#fade-container {
+    position: absolute;
+    z-index: 9999999999999999999999999999999999999999999999;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    background: $amarelo;
+    img {
+        text-align: center;
+        margin: 350px auto;
+    }
+}

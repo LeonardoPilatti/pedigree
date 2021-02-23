@@ -74,5 +74,15 @@ next.addEventListener('click', goNext);
 
 
 
-setInterval(goNext, 5000)
+//setInterval(goNext, 5000)
 
+
+window.addEventListener("load", function() {
+  var fadeContainer = document.querySelector("#fade-container");
+
+setTimeout(function() {
+    
+      fadeContainer.style.display = "none";
+  
+}, 1000);
+});
